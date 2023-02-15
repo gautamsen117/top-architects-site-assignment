@@ -113,10 +113,6 @@ a {
 
 /* Feature two styles */
 
-.feature-two-section {
-    position: absolute;
-}
-
 .feature-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -162,9 +158,46 @@ a {
 
 .btn {
     position: relative;
-    left: 48%;
-    top: -120px;
+    left: 5%;
+    top: -50px;
 }
+
+/* Fact section */
+
+.fact-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.fact {
+    width: 200px;
+    padding: 25px 0;
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    transition: transform 2s;
+}
+
+.fact:hover {
+    transform: rotate(360deg);
+    background-color: lightpink;
+}
+
+.fact-view {
+    font-size: 45px;
+    font-weight: 700;
+}
+
 
 /* Responsive for small device / mobile */
 @media only screen and (max-width:576px) {
@@ -224,5 +257,12 @@ a {
     .btn {
         left: 10%;
         top: -50px;
+    }
+
+    .fact-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fact {
+        margin: 0 auto;
     }
 }
