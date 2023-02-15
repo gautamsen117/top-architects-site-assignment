@@ -12,10 +12,21 @@ a {
     text-decoration: none;
 }
 
+.btn-primary {
+    color: #FFFFFF;
+    font-size: 20px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
 /* header styles */
 .header {
     background: rgba(255, 144, 14, 0.1);
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -23,30 +34,71 @@ a {
     margin: 0 auto;
     padding: 30px 10px;
 }
+
 .header-title {
     color: #131313;
     font-weight: 700;
     font-size: 45px;
 }
+
 .nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
+/* Brand banner styles */
 
+.brand-banner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    width: 90%;
+    margin: 70px auto;
+}
 
+.banner-detail {
+    width: 862px;
+}
+
+.banner-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.banner-thumbnail img {
+    width: 100%;
+}
 
 
 
 /* Responsive for small device / mobile */
 @media only screen and (max-width:576px) {
-    .navbar, .nav {
+
+    .navbar,
+    .nav {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
+
     .header-title {
         font-size: 2em;
+    }
+
+    .brand-banner-section {
+        margin-top: 10px;
+        gap: 30px;
+    }
+
+    .banner-detail {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 2.5em;
     }
 }
