@@ -1,0 +1,52 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600&family=Work+Sans&display=swap');
+
+/* common styles */
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    color: #424242;
+    text-decoration: none;
+}
+
+/* header styles */
+.header {
+    background: rgba(255, 144, 14, 0.1);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+.header-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+
+
+/* Responsive for small device / mobile */
+@media only screen and (max-width:576px) {
+    .navbar, .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .header-title {
+        font-size: 2em;
+    }
+}
