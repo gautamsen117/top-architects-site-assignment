@@ -296,3 +296,69 @@ a {
         margin: 0 auto;
     }
 }
+
+/* Responsive for Tab device */
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .header-title {
+        font-size: 2.5em;
+    }
+
+    .brand-banner-section {
+        margin-top: 10px;
+        gap: 30px;
+    }
+
+    .banner-detail {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 2.5em;
+    }
+
+    .feature-one {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .feature-team {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .feature-one-title {
+        font-size: 2.5em;
+    }
+
+    .feature-two {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-two-title {
+        font-size: 2.5em;
+    }
+
+    .btn {
+        left: 10%;
+        top: -50px;
+    }
+
+    .fact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fact {
+        margin: 0 auto;
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .sponsor {
+        margin: 0 auto;
+    }
+}
