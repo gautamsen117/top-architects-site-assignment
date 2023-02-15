@@ -7,6 +7,11 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
 a {
     color: #424242;
     text-decoration: none;
@@ -73,7 +78,37 @@ a {
     width: 100%;
 }
 
+/* Feature One styles */
+.feature-one {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+}
 
+.feature-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-team img {
+    width: 100%;
+}
+
+.feature-one-title {
+    color: #727272;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.title-color-one {
+    color: #131313;
+}
+
+.title-color-two {
+    color: #FF900E;
+}
 
 /* Responsive for small device / mobile */
 @media only screen and (max-width:576px) {
@@ -100,5 +135,20 @@ a {
 
     .banner-title {
         font-size: 2.5em;
+    }
+
+    .feature-one {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .feature-team {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .feature-one-title {
+        font-size: 2em;
     }
 }
