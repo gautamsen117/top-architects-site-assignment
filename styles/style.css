@@ -198,6 +198,20 @@ a {
     font-weight: 700;
 }
 
+/* Bonus Section styles */
+.bonus-section {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 60px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.bonus-section-title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
 /* Sponsor section styles */
 
 .sponsor-section {
